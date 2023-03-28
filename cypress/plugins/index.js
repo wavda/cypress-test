@@ -1,6 +1,10 @@
-const { merge } = require('mochawesome-merge')
-const generator = require('mochawesome-report-generator')
+const allureWriter = require('@shelex/cypress-allure-plugin/writer');
 
-module.exports = (on, config) => {
-  require('cypress-mochawesome-reporter/plugin')(on);
-};
+module.exports = defineConfig({
+    e2e: {
+        setupNodeEvents(on, config) {
+            allureWriter(on, config);
+            return config;
+        }
+    }
+});

@@ -129,6 +129,5 @@ dist
 # Environment
 cypress.env.json
 
-# Test Results
-mochawesome**
+# Test Reports
 reports/
