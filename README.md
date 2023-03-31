@@ -1,5 +1,5 @@
 # Test Execution
-1. Rename copy `example.cypress.env.json` and rename the copied file to `cypress.env.json`
+1. Copy `example.cypress.env.json` and rename the copied file to `cypress.env.json`
 2. Fill in environment values within `cypress.env.json` file
 3. Run `npm install`
 4. Run `npm test`
